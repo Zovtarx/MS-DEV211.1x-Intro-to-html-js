@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Intro to JS</title>
+    </head>
+    <body>
+        <header id="headerItem">
+            Old header
+        </header>
+        <section>
+            <button onclick="clickHandler()">Click here!</button>
+        </section>
+        <script type="text/javascript">
+            function startLogic() {
+                var newHtml = '<em>New header</em>';
+                document.getElementById('headerItem').innerHTML = newHtml;
+            }
+            function clickHandler() {
+                alert('You clicked me!');
+                startLogic();
+            }
+        </script>
+    </body>
+</html>
